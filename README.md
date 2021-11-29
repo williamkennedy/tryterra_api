@@ -84,7 +84,7 @@ client.sleep(user_id: 'abs', start_date: '2021-01-01')
 ### Menstruation
 
 ```
-client.sleep(user_id: 'abs', start_date: '2021-01-01')
+client.menstruation(user_id: 'abs', start_date: '2021-01-01')
 ```
 
 ## Development
