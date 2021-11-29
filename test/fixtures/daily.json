@@ -1,0 +1,123 @@
+{
+  "daily": {
+    "stress_data": {
+      "medium_stress_duration": 100,
+      "low_stress_duration": 200,
+      "avg_stress_level": 100,
+      "activity_stress_duration": 200,
+      "rest_stress_duration": 600,
+      "stress_duration": 1200,
+      "max_stress_level": 90,
+      "high_stress_duration": 10,
+      "samples": [{
+        "timestamp": "2021-03-21T04:00:00-07:00",
+        "level": 100
+      }]
+    },
+    "MET_data": {
+      "num_moderate_intensity_minutes": 10,
+      "num_low_intensity_minutes": 20,
+      "avg_level": 1.23,
+      "samples": [{
+        "timestamp": "2021-03-21T04:10:00-07:00",
+        "level": 0.9
+      },
+      {
+        "timestamp": "2021-03-21T04:02:00-07:00",
+        "level": 0.9
+      }
+      ],
+      "num_high_intensity_minutes": 4,
+      "num_inactive_minutes": 5
+    },
+    "heart_rate_data": {
+      "summary": {
+        "user_hr_max": 190,
+        "min_hr": 67,
+        "avg_hr_variability": 65,
+        "avg_hr": 78,
+        "resting_hr": 67,
+        "max_hr": 160
+      },
+      "detailed": {
+        "hrv_samples": [{
+          "timestamp": "2021-03-21T04:01:00-07:00",
+          "hrv": 65
+        },
+        {
+          "timestamp": "2021-03-21T04:02:00-07:00",
+          "hrv": 65
+        }
+        ],
+        "hr_samples": [{
+          "timestamp": "2021-03-21T04:01:00-07:00",
+          "bpm": 70
+        },
+        {
+          "timestamp": "2021-03-21T04:02:00-07:00",
+          "bpm": 71
+        }
+        ]
+      }
+    },
+    "active_durations_data": {
+      "activity_seconds": 123,
+      "low_intensity_seconds": 405,
+      "rest_seconds": 402,
+      "num_continuous_inactive_periods": 120,
+      "inactivity_seconds": 301,
+      "activity_levels_samples": [{
+        "timestamp": "2021-03-21T04:00:00-07:00",
+        "activity_level": 2
+      },
+      {
+        "timestamp": "2021-03-21T04:02:00-07:00",
+        "activity_level": 2
+      }
+      ],
+      "moderate_intensity_seconds": 204,
+      "vigorous_intensity_seconds": 123
+    },
+    "metadata": {
+      "start_time": "2021-03-21T04:00:00-07:00",
+      "end_time": "2021-03-21T04:00:00-07:00"
+    },
+    "device_data": {
+      "software_version": "1.12.36",
+      "manufacturer": "Suunto",
+      "serial_number": "1234567898765",
+      "name": "Suunto Spartan Sport Wrist HR",
+      "hardware_version": "LankkuD"
+    },
+    "distance_data": {
+      "floors_climbed": 1000,
+      "swimming": {
+        "pool_length_metres": 25,
+        "num_laps": 35,
+        "num_strokes": 493
+      },
+      "elevation": {
+        "gain_actual_metres": 28.7,
+        "avg_metres": 30,
+        "loss_actual_metres": 5.0,
+        "max_metres": 40.0,
+        "gain_planned_metres": 36.7,
+        "min_metres": 28.0
+      },
+      "distance_metres": 1203,
+      "steps": 10200
+    },
+    "calories_data": {
+      "net_intake_calories": 2300,
+      "net_activity_calories": 700,
+      "BMR_calories": 2100,
+      "total_burned_calories": 2800
+    }
+  },
+  "status": "success",
+  "user": {
+    "user_id": "123456",
+    "last_webhook_update": "2021-09-17T16:08:38.319576+00:00",
+    "provider": "FITBIT"
+  }
+}

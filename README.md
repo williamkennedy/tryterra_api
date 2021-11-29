@@ -1,8 +1,7 @@
 # TryterraApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tryterra_api`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+This an unoffical Ruby api wrapper for tryterra.co
 
 ## Installation
 
@@ -23,7 +22,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-client = TryTerra::Client.new(dev_id: ENV['DEV_ID'], x_api_key: ENV['API_KEY']
+client = TryTerra::Client.new(dev_id: ENV['DEV_ID'], x_api_key: ENV['API_KEY'])
 auth_response = client.auth.authenicate_user(resource: 'fitbit', reference_id: '1234-5678' )
 ```
 
@@ -40,6 +39,53 @@ auth_response = client.auth.authenicate_user(resource: 'fitbit', reference_id: '
 client.auth.deauthenticate_user(user_id: '123')
 ```
 
+#### Subscriptions
+
+```
+client.subscriptions
+```
+
+#### User Info
+
+```
+client.user_info(user_id: 'abs')
+```
+
+#### Athlete
+
+```
+client.athlete(user_id: 'abs')
+```
+
+#### Activity
+
+```
+client.activity(user_id: 'abs', start_date: '2021-01-01')
+```
+
+#### Body
+
+```
+client.body(user_id: 'abs', start_date: '2021-01-01')
+```
+
+#### Daily
+
+```
+client.daily(user_id: 'abs', start_date: '2021-01-01')
+```
+
+#### Sleep
+
+```
+client.sleep(user_id: 'abs', start_date: '2021-01-01')
+```
+
+### Menstruation
+
+```
+client.menstruation(user_id: 'abs', start_date: '2021-01-01')
+```
 
 ## Development
 
