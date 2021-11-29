@@ -1,6 +1,6 @@
 module TryTerra
   class Client
-    BASE_URL = 'https://api.tryterra.co/v2/'
+    BASE_URL = "https://api.tryterra.co/v2/"
 
     attr_reader :dev_id, :x_api_key, :stubs
 
@@ -29,7 +29,7 @@ module TryTerra
     def activity(**params)
       ActivityResource.new(self).get(params)
     end
-    
+
     def body(**params)
       BodyResource.new(self).get(params)
     end
@@ -48,11 +48,11 @@ module TryTerra
 
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
-        conn.headers['dev-id'] = dev_id
-        conn.headers['x-api-key'] = x_api_key
+        conn.headers["dev-id"] = dev_id
+        conn.headers["x-api-key"] = x_api_key
 
-        conn.response :json, content_type: 'application/json'
-        #for testing
+        conn.response :json, content_type: "application/json"
+        # for testing
         if @stubs
           conn.adapter :test, @stubs
         end
