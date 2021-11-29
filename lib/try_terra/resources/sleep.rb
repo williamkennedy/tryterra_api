@@ -1,6 +1,6 @@
 module TryTerra
   class SleepResource < Resource
-    def get(**params)
+    def get(params)
       Sleep.new(get_request("sleep", params).body)
     end
   end

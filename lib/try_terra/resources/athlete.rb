@@ -1,6 +1,6 @@
 module TryTerra
   class AthleteResource < Resource
-    def get(**params)
+    def get(params)
       Athlete.new(get_request("athlete", params).body)
     end
   end
