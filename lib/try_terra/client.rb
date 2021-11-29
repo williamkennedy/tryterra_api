@@ -14,6 +14,38 @@ module TryTerra
       AuthResource.new(self)
     end
 
+    def subscriptions(**params)
+      SubscriptionsResource.new(self).get(params)
+    end
+
+    def user_info(**params)
+      UserInfoResource.new(self).get(params)
+    end
+
+    def athlete(**params)
+      AthleteResource.new(self).get(params)
+    end
+
+    def activity(**params)
+      ActivityResource.new(self).get(params)
+    end
+    
+    def body(**params)
+      BodyResource.new(self).get(params)
+    end
+
+    def daily(**params)
+      DailyResource.new(self).get(params)
+    end
+
+    def sleep(**params)
+      SleepResource.new(self).get(params)
+    end
+
+    def menstruation(**params)
+      MenstruationResource.new(self).get(params)
+    end
+
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
         conn.headers['dev-id'] = dev_id

@@ -8,6 +8,10 @@ module TryTerra
 
     private
 
+    def get_request(url, params)
+      client.connection.get(url, params)
+    end
+
     def post_request(url, params)
       client.connection.post(url) do |req|
         req.params = params

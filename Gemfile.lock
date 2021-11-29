@@ -8,6 +8,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.4.2)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -31,8 +32,33 @@ GEM
       faraday (~> 1.0)
     minitest (5.14.4)
     multipart-post (2.1.1)
+    parallel (1.21.0)
+    parser (3.0.3.0)
+      ast (~> 2.4.1)
+    rainbow (3.0.0)
     rake (10.5.0)
+    regexp_parser (2.1.1)
+    rexml (3.2.5)
+    rubocop (1.22.3)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.12.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.13.0)
+      parser (>= 3.0.1.1)
+    rubocop-performance (1.11.5)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
+    standard (1.4.0)
+      rubocop (= 1.22.3)
+      rubocop-performance (= 1.11.5)
+    unicode-display_width (2.1.0)
 
 PLATFORMS
   ruby
@@ -41,6 +67,7 @@ DEPENDENCIES
   bundler (~> 1.17)
   minitest (~> 5.0)
   rake (~> 10.0)
+  standard
   tryterra_api!
 
 BUNDLED WITH

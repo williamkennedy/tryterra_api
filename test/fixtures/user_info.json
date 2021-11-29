@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "user": {
+    "user_id": "123456",
+    "last_webhook_update": "2021-09-17T16:08:38.319576+00:00",
+    "provider": "FITBIT"
+  },
+  "is_authenticated": true
+}

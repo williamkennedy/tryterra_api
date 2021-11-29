@@ -1,0 +1,71 @@
+{
+  "body": {
+    "oxygen_data": {
+      "saturation_percentage": 97,
+      "max_volume_ml_per_min_per_kg": 48.0,
+      "saturation_samples": [{
+        "timestamp": "2021-03-21T04:00:00-07:00",
+        "percentage": 97
+      }]
+    },
+    "insulin_data": {
+      "insulin_units": 0.8,
+      "insulin_type": "None",
+      "day_avg_blood_glucose_mg_per_dL": 7.8,
+      "blood_glucose_samples": [{
+        "timestamp": "2021-03-21T04:10:00-07:00",
+        "blood_glucose_mg_per_dL": 230,
+        "glucose_level_flag": 0
+      },
+      {
+        "timestamp": "2021-03-21T04:02:00-07:00",
+        "blood_glucose_mg_per_dL": 230,
+        "glucose_level_flag": 0
+      }
+      ],
+      "urine_colour": "Yellow"
+    },
+    "metadata": {
+      "start_time": "2019-09-03T04:00:00+03:00"
+    },
+    "heart_data": {
+      "pulse_wave_velocity_metres_per_second": 91,
+      "pulse_bpm": 91,
+      "hr_variability": 65,
+      "afib_classification": 1
+    },
+    "blood_pressure_data": {
+      "systolic_bp": 78,
+      "diastolic_bp": 87
+    },
+    "hydration_data": {
+      "hydration_level": "Normal",
+      "hydration_kg": 0,
+      "water_consumption_ml": 3000
+    },
+    "temperature_data": {
+      "temperature_celsius": 36.7,
+      "skin_temperature_celsius": 36.7,
+      "body_temperature_celsius": 33
+    },
+    "measurements_data": {
+      "fat_percentage": 12,
+      "BMI": 24.03,
+      "muscle_mass_g": 55.4,
+      "skin_fold_mm": 73.3,
+      "BMR": 1680,
+      "height_cm": 170.0,
+      "estimated_fitness_age": 19,
+      "bone_mass_g": 25,
+      "water_percentage": 70,
+      "RMR": 1930,
+      "weight_kg": 67
+    }
+  },
+  "status": "success",
+  "user": {
+    "user_id": "123456",
+    "last_webhook_update": "2021-09-17T16:08:38.319576+00:00",
+    "provider": "FITBIT"
+  }
+}

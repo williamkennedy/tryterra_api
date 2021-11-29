@@ -1,0 +1,129 @@
+{
+  "sleep": {
+    "heart_rate_data": {
+      "summary": {
+        "user_hr_max": 190,
+        "min_hr": 67,
+        "avg_hr_variability": 65,
+        "avg_hr": 78,
+        "resting_hr": 67,
+        "max_hr": 160
+      },
+      "detailed": {
+        "hrv_samples": [{
+          "timestamp": "2021-03-21T04:01:00-07:00",
+          "hrv": 65
+        },
+        {
+          "timestamp": "2021-03-21T04:02:00-07:00",
+          "hrv": 65
+        }
+        ],
+        "hr_samples": [{
+          "timestamp": "2021-03-21T04:01:00-07:00",
+          "bpm": 70
+        },
+        {
+          "timestamp": "2021-03-21T04:02:00-07:00",
+          "bpm": 71
+        }
+        ]
+      }
+    },
+    "respiration_data": {
+      "breaths_data": {
+        "samples": [{
+          "breaths_per_min": 15,
+          "timestamp": "2021-08-02T22:15:00+01:00"
+        },
+        {
+          "breaths_per_min": 15,
+          "timestamp": "2021-08-03T07:52:00+01:00"
+        }
+        ],
+        "end_time": "2021-08-03T07:52:00+01:00",
+        "start_time": "2021-08-02T22:15:00+01:00",
+        "max_breaths_per_min": 18,
+        "min_breaths_per_min": 17,
+        "avg_breaths_per_min": 17.5,
+        "on_demand_reading": false
+      },
+      "oxygen_saturation_data": {
+        "samples": [{
+          "timestamp": "2021-08-02T22:15:00+01:00",
+          "percentage": 97
+        },
+        {
+          "timestamp": "2021-08-03T07:52:00+01:00",
+          "percentage": 98
+        }
+        ],
+        "end_time": "2021-08-03T07:52:00+01:00",
+        "start_time": "2021-08-02T22:15:00+01:00",
+        "on_demand_reading": false
+      },
+      "snoring_data": {
+        "num_snoring_events": 0,
+        "samples": [{
+          "timestamp": "2021-08-02T22:15:00+01:00",
+          "duration": 0
+        },
+        {
+          "timestamp": "2021-08-03T07:52:00+01:00",
+          "duration": 0
+        }
+        ],
+        "end_time": "2021-08-03T07:52:00+01:00",
+        "start_time": "2021-08-02T22:15:00+01:00",
+        "total_snoring_duration": 0
+      }
+    },
+    "metadata": {
+      "sleep_efficiency": 0.814136126,
+      "end_time": "2021-08-03T07:52:00+01:00",
+      "start_time": "2021-08-02T22:15:00+01:00",
+      "sleep_duration_planned": 8
+    },
+    "sleep_durations_data": {
+      "awake": {
+        "num_out_of_bed_events": 1,
+        "num_wakeup_events": 2,
+        "duration_after_wakeup": 30,
+        "waso": 20,
+        "duration_before_sleeping": 300,
+        "duration_long_interruption": 400,
+        "duration_awake_state": 500,
+        "duration_short_interruption": 10
+      },
+      "other": {
+        "duration_unmeasurable_sleep": 3890,
+        "duration_in_bed": 32400
+      },
+      "hypnogram_samples": [{
+        "timestamp": "2021-08-02T22:15:00+01:00",
+        "level": 2
+      },
+      {
+        "timestamp": "2021-08-03T07:52:00+01:00",
+        "level": 2
+      }
+      ],
+      "asleep": {
+        "duration_deep_sleep_state": 1000,
+        "duration_REM_sleep_state": 3200,
+        "duration_asleep_state": 32400,
+        "num_REM_events": 4,
+        "duration_light_sleep_state": 1140
+      }
+    },
+    "temperature_data": {
+      "delta": 0.42
+    }
+  },
+  "status": "success",
+  "user": {
+    "user_id": "123456",
+    "last_webhook_update": "2021-09-17T16:08:38.319576+00:00",
+    "provider": "FITBIT"
+  }
+}

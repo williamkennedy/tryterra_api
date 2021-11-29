@@ -1,0 +1,20 @@
+{
+  "athlete": {
+    "firstname": "Tony",
+    "lastname": "Stark",
+    "gender": "Male",
+    "sex": "M",
+    "date_of_birth": "1970-05-29",
+    "bio": "Iron Man",
+    "email": "owner@starkenterprises.com",
+    "city": "Malibu",
+    "state":"California",
+    "country": "United States"
+  },
+  "status": "success",
+  "user": {
+    "user_id": "123456",
+    "last_webhook_update": "2021-09-17T16:08:38.319576+00:00",
+    "provider": "FITBIT"
+  }
+}

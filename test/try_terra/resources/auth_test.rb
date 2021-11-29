@@ -1,7 +1,6 @@
 require 'test_helper'
-require 'faraday'
 
-class AuthResourceTest < Minitest::Test
+class AuthTest < Minitest::Test
   def test_authenticate_user
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
       stub.post('/v2/auth/authenticateUser') do |env|
