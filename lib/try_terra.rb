@@ -8,6 +8,8 @@ module TryTerra
   autoload :Client, "try_terra/client"
   autoload :Resource, "try_terra/resource"
   autoload :Object, "try_terra/object"
+  # webhook
+  autoload :WebHook, "try_terra/web_hook"
 
   # Endpoints
   autoload :AuthResource, "try_terra/resources/auth"

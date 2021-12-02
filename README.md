@@ -26,6 +26,15 @@ client = TryTerra::Client.new(dev_id: ENV['DEV_ID'], x_api_key: ENV['API_KEY'])
 auth_response = client.auth.authenicate_user(resource: 'fitbit', reference_id: '1234-5678' )
 ```
 
+## WebHook
+
+Webhooks validation is supported. Assuming your using Rails, you can do the following. 
+
+```ruby
+webhook = TryTerra::WebHook.new(key: ENV['TERRA_WEBHOOK_SECRET'], signature_header: request.headers['terra-signature'], data: request.body.read)
+webhook.valid? => true
+```
+
 
 ## Resources
 
