@@ -37,7 +37,7 @@ module TryTerra
         raise Error, response.body["message"]
       when 500
         raise Error, "Possible Internal Server Error"
-      end 
+      end
       response
     end
   end
