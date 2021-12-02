@@ -60,6 +60,12 @@ client.subscriptions
 client.user_info(user_id: 'abs')
 ```
 
+#### Bulk User Info
+
+```
+client.bulk_user_info(params: ['user_id', 'user_id'])
+```
+
 #### Athlete
 
 ```
