@@ -9,14 +9,10 @@ module TryTerra
     end
 
     def valid?
-      t, header_signature = @signature_header.split(",").map{|kv| kv.split("=")[1]}
+      t, header_signature = @signature_header.split(",").map { |kv| kv.split("=")[1] }
       timestamped_payload = "#{t}.#{@data}"
       signature = OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new("sha256"), @key, timestamped_payload)
-      if signature == header_signature
-        true
-      else
-        false
-      end
+      signature == header_signature
     end
   end
 end
