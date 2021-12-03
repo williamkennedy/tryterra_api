@@ -36,7 +36,7 @@ GEM
     parser (3.0.3.0)
       ast (~> 2.4.1)
     rainbow (3.0.0)
-    rake (10.5.0)
+    rake (13.0.6)
     regexp_parser (2.1.1)
     rexml (3.2.5)
     rubocop (1.22.3)
@@ -66,7 +66,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.2.20)
   minitest (~> 5.0)
-  rake (~> 10.0)
+  rake (~> 13.0)
   standard
   tryterra_api!
 
