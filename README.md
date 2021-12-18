@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/tryterra_api@2x.png)](https://badge.fury.io/rb/tryterra_api)
+
 # TryterraApi
 
 
