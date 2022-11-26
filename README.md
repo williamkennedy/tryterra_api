@@ -3,7 +3,7 @@
 # TryterraApi
 
 
-This an unoffical Ruby api wrapper for (https://tryterra.co)[tryterra.co]
+This an unoffical Ruby api wrapper for [tryterra.co](https://tryterra.co)
 
 ## Installation
 
